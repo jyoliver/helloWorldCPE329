@@ -3,13 +3,11 @@
  * The green LED is connected to P2.1.
  * The LEDs are high active (a '1' turns ON the LED).
  *
- * Tested with Keil 5.20 and MSP432 Device Family Pack V2.2.0
- * on XMS432P401R Rev C.
  */
 
 #include "msp.h"
 
-#define DELAY 25
+#define DELAY 20           // busy loop delay of 20ms
 #define DELAY2 DELAY*3000u // DELAY * 1 mS assuming 3 MHz clock
 
 void delayMs(int n);
